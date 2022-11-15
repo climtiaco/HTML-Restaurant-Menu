@@ -6,9 +6,15 @@ body {
     text-align: center;
 }
 
-h1,
-h2 {
+h1 {
     color: darkred;
+}
+
+h2 {
+    color:darkred;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    
+
 }
 
 h3, 
