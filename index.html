@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H-Thai-ML</title>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <link 
-    rel="stylesheet" 
-    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
-    crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/8a4231c3c9.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+    });
+</script>
 </head>
 <body>
     <!-- HOME PAGE -->
     <!-- TODO: Navbar here -->
-    <nav>
+    <div id="message_bar">We are closed on Thanksgiving & Christmas</div>
+    <nav class="active">
         <ul>
             <li>
                 <a href="index.html">Home</a>
@@ -48,5 +55,8 @@
         </div>
         <img alt="tables in restaurant" src="./assets/images/table-in-restaurant.jpg">
     </main>
+    <footer id="footer">
+        <p>H-Thai-ML is the Best 'round town</p>
+    </footer>
 </body>
 </html>

@@ -6,16 +6,23 @@
     <title>Document</title>
     <!-- Remember to link to your CSS file! -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <link 
-    rel="stylesheet" 
-    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
-    crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/8a4231c3c9.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            $(function(){
+                $('a').each(function(){
+                    if ($(this).prop('href') == window.location.href) {
+                 $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+</script>
 </head>
 <body>
+    <div id="message_bar">We are closed on Thanksgiving & Christmas</div>
     <!-- ABOUT PAGE -->
     <!-- TODO: Navbar here -->
-    <nav>
+    <nav class="active">
         <ul>
             <li>
                 <a href="index.html">Home</a>
@@ -38,7 +45,7 @@
         <!-- About page code here -->
         <h1>About Us</h1>
         <h2>Locations</h2>
-        <ul>
+        <ul id="locations">
             <li>Las Vegas, NV</li>
             <li>Phoenix, AZ</li>
             <li>Westchester County, NY</li>

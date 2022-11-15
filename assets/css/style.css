@@ -13,7 +13,7 @@ h1 {
 h2 {
     color:darkred;
     font-family: Brush Script MT, Brush Script Std, cursive;
-    
+
 
 }
 
@@ -36,6 +36,11 @@ main {
 nav {
     background-color: beige;
     padding: 10px;
+}
+
+nav .active {
+    color: green;
+    background-color: black;
 }
 
 nav ul {
@@ -89,4 +94,26 @@ td,
 th {
     border: 1px solid black;
     padding: 5px;
+}
+
+#locations li {
+    list-style: none;
+    text-align: center;
+
+}
+
+#message_bar {
+    height: 22px;
+    width: 100%;
+    background-color: darkgreen;
+    color: yellow;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+
+}
+
+#footer p {
+    color: white;
+    background-color: darkred;
 }
